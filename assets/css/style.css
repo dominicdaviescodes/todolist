@@ -1,5 +1,6 @@
 #container {
-  background-color: beige;
   width: 500px;
   margin: 0 auto;
+  border: 2px solid gray;
+  padding: 50px;
 }
