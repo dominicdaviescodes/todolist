@@ -1,11 +1,7 @@
-// check off specific todos by clicking
-// when an li in a ul is clicked run this code
 $('ul').on('click', 'li', function () {
   $(this).toggleClass('completed');
 });
 
-// click on x to delete a todo
-// pass in e event object to stop event bubbling up to parent elements
 $('ul').on('click', 'span', function (e) {
   $(this)
     .parent()
@@ -21,4 +17,8 @@ $("input[type='text']").keypress(function (e) {
     $(this).val('');
     $('ul').append('<li><i class="fa fa-trash"></i> ' + todoText + '</li>');
   }
+});
+
+$('#toggle-form').click(function () {
+  $("input[type='text']").fadeToggle();
 });
