@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -16,6 +20,30 @@ ul {
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+li {
+  background: blue;
+  height: 40px;
+  line-height: 40px;
+  color: #666666;
+}
+
+// every other
+/* li:nth-child(2n) {
+  background: yellow;
+} */
+
+li:nth-child(2n) {
+  background: green;
+}
+
+input {
+  font-size: 18px;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  color: #2980b9;
 }
 
 #container {
