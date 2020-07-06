@@ -1,8 +1,10 @@
 #container {
   width: 500px;
-  margin: 0 auto;
-  border: 2px solid gray;
+  margin: 100px auto;
   padding: 50px;
+  background: #f7f7f7;
+  /* tutorial uses 0.1 */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
 
 .completed {
