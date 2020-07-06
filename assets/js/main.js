@@ -14,11 +14,10 @@ $('span').click(function (e) {
   e.stopPropagation();
 });
 
-// type a todo and hit enter adds todo item
-
 $("input[type='text']").keypress(function (e) {
   if (e.which === 13) {
     var todoText = $(this).val();
-    
+    $(this).val("");
+    $("ul").append("<li><span>X</span> " + todoText + "</li>");
   }
 });
